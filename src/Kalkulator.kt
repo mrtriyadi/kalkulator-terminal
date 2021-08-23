@@ -18,14 +18,14 @@ fun main(){
                 pilihanKalkulator.operasi()
             }
 
-            //bila user memasukan 2, maka akan membuat objek dari clas Perkalian
+            //bila user memasukan 3, maka akan membuat objek dari clas Perkalian
             // dan melakukan fungsi operasi() yang ada di class Perkalian
             "3" -> {
                 val pilihanKalkulator = Perkalian()
                 pilihanKalkulator.operasi()
             }
 
-            //bila user memasukan 2, maka akan membuat objek dari clas Pembagian
+            //bila user memasukan 4, maka akan membuat objek dari clas Pembagian
             // dan melakukan fungsi operasi() yang ada di class Pembagian
             "4" -> {
                 val pilihanKalkulator = Pembagian()
