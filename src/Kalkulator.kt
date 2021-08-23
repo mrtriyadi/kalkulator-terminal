@@ -1,38 +1,34 @@
 fun main(){
-
-    //variabel untuk melakukan perulangan pada do while
-    var ulang:Boolean=true
-
     //tampilkan menu pilihan dengan memanggil fungsi tampilkanMenu() pada class Home
     do {
-        var menu = Home()
+        val menu = Home()
         menu.tampilkanMenu()
         when (menu.pilihanKalkulator) {
             //bila user memasukan 1, maka akan membuat objek dari clas Penambahan
             // dan melakukan fungsi operasi() yang ada di class Penambahan
             "1" -> {
-                var pilihanKalkulator = Penambahan()
+                val pilihanKalkulator = Penambahan()
                 pilihanKalkulator.operasi()
             }
 
-            //bila user memasukan 1, maka akan membuat objek dari clas Pengurangan
+            //bila user memasukan 2, maka akan membuat objek dari clas Pengurangan
             // dan melakukan fungsi operasi() yang ada di class Pengurangan
             "2" -> {
-                var pilihanKalkulator = Pengurangan()
+                val pilihanKalkulator = Pengurangan()
                 pilihanKalkulator.operasi()
             }
 
-            //bila user memasukan 1, maka akan membuat objek dari clas Perkalian
+            //bila user memasukan 2, maka akan membuat objek dari clas Perkalian
             // dan melakukan fungsi operasi() yang ada di class Perkalian
             "3" -> {
-                var pilihanKalkulator = Perkalian()
+                val pilihanKalkulator = Perkalian()
                 pilihanKalkulator.operasi()
             }
 
-            //bila user memasukan 1, maka akan membuat objek dari clas Pembagian
+            //bila user memasukan 2, maka akan membuat objek dari clas Pembagian
             // dan melakukan fungsi operasi() yang ada di class Pembagian
             "4" -> {
-                var pilihanKalkulator = Pembagian()
+                val pilihanKalkulator = Pembagian()
                 pilihanKalkulator.operasi()
             }else ->{
                 println ("")
@@ -40,9 +36,5 @@ fun main(){
                 continue
             }
         }
-        //memanggil fungsi ulang()
-        ulang=ulang()
-
-
-    } while (ulang==true)
+    } while (ulang()==true)
 }
